@@ -1,5 +1,5 @@
 let hikeID = localStorage.getItem("hikeID");
-db.collection("hikes").where("code", "==", hikeID)
+db.collection("Hikes").where("code", "==", hikeID)
     .get()
     .then(queryHike => {
         //see how many results you have got from the query
